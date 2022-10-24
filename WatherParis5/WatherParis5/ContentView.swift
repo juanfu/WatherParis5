@@ -28,6 +28,10 @@ struct ContentView: View {
                 }
                 .onDelete(perform: deleteItems)
             }
+            .onAppear {
+                let fetch = FetchWeatherAPI()
+                fetch.fetchWeather()
+            }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
