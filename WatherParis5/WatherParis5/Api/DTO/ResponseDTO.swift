@@ -9,8 +9,8 @@ import Foundation
 
 struct ResponseDTO: Codable {
     let cod: String
-    let message: String
-    let cnt: String
+    let message: Int
+    let cnt: Int
     let list: [WeatherListItemDTO]
     let city: CityDTO
     
@@ -25,8 +25,8 @@ struct ResponseDTO: Codable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.cod = try container.decode(String.self, forKey: .cod)
-        self.message = try container.decode(String.self, forKey: .message)
-        self.cnt = try container.decode(String.self, forKey: .cnt)
+        self.message = try container.decode(Int.self, forKey: .message)
+        self.cnt = try container.decode(Int.self, forKey: .cnt)
         self.list = try container.decode([WeatherListItemDTO].self, forKey: .list)
         self.city = try container.decode(CityDTO.self, forKey: .city)
     }

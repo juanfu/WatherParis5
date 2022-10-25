@@ -11,7 +11,7 @@ import Foundation
 struct WeatherListItemDTO: Codable {
     let dt: Int
     let main: MainDTO
-    let weather: WeatherDTO
+    let weather: [WeatherDTO]
     let clouds: CloudsDTO
     let wind: WindDTO
     let visibility: Int
@@ -35,7 +35,7 @@ struct WeatherListItemDTO: Codable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.dt = try container.decode(Int.self, forKey: .dt)
         self.main = try container.decode(MainDTO.self, forKey: .main)
-        self.weather = try container.decode(WeatherDTO.self, forKey: .weather)
+        self.weather = try container.decode([WeatherDTO].self, forKey: .weather)
         self.clouds = try container.decode(CloudsDTO.self, forKey: .clouds)
         self.wind = try container.decode(WindDTO.self, forKey: .wind)
         self.visibility = try container.decode(Int.self, forKey: .visibility)

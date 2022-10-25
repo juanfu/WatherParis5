@@ -11,10 +11,15 @@ import Alamofire
 class FetchWeatherAPI {
     
     func fetchWeather() {
-        AF.request(APIConstants.base_url, parameters: APIConstants.params).responseData { response in
+        AF.request(APIConstants.base_url, parameters: APIConstants.params, encoder: URLEncodedFormParameterEncoder.default)
+            .responseData { response in
             switch response.result {
             case .success(let data):
-                print(data)
+                let decoder = JSONDecoder()
+               // decoder.keyDecodingStrategy = .convertFromSnakeCase
+                
+                let items : ResponseDTO = try! decoder.decode(ResponseDTO.self, from: data)
+                print(items.list.count)
             case let .failure(error):
                 print(error)
             }
