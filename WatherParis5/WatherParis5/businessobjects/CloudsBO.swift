@@ -10,3 +10,9 @@ import Foundation
 struct CloudsBO {
     let all: Int
 }
+
+extension CLoudsObject {
+    func toBO() -> CloudsBO {
+        return CloudsBO(all: self.all)
+    }
+}

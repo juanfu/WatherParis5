@@ -8,24 +8,28 @@
 import Foundation
 
 protocol WeatherInfoRepositoryProtocol {
-    func fetchWeather() -> ResponseBO
+    func fetchWeather(completion: @escaping (ResponseBO) -> Void)
 }
 
 class WeatherInfoRepository: WeatherInfoRepositoryProtocol {
-    func fetchWeather() -> ResponseBO {
+    func fetchWeather(completion: @escaping (ResponseBO) -> Void) {
+        // return cached data
+        let model = DatabaseManager.shared.getData()
         
-        return ResponseBO(
-            list: [WeatherListItemBO](),
-            city: CityBO(
-                id: 123,
-                name: "Crevillente",
-                coord: CoordinateBO(lat: 13.1423, lon: -0.34),
-                country: "Spain",
-                population: 1,
-                timezone: 1,
-                sunrise: 2,
-                sunset: 2
-            )
-        )
+        if let model = model {
+            completion(model.toBO())
+        }
+        
+        // fetch remote data
+        FetchWeatherAPI().fetchWeather { error in
+            if let error = error {
+                print(error)
+            } else {
+                let model = DatabaseManager.shared.getData()
+                if let model = model {
+                    completion(model.toBO())
+                }
+            }
+        }
     }
 }

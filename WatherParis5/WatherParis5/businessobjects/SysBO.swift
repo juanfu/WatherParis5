@@ -10,3 +10,9 @@ import Foundation
 struct SysBO {
     let pod: String
 }
+
+extension SysObject {
+    func toBO() -> SysBO {
+        return SysBO(pod: self.pod)
+    }
+}

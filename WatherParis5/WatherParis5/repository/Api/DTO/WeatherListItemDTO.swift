@@ -15,7 +15,7 @@ struct WeatherListItemDTO: Codable {
     let clouds: CloudsDTO
     let wind: WindDTO
     let visibility: Int
-    let pop: Int
+    let pop: Int?
     let sys: SysDTO
     let dt_txt: String
     
@@ -39,7 +39,7 @@ struct WeatherListItemDTO: Codable {
         self.clouds = try container.decode(CloudsDTO.self, forKey: .clouds)
         self.wind = try container.decode(WindDTO.self, forKey: .wind)
         self.visibility = try container.decode(Int.self, forKey: .visibility)
-        self.pop = try container.decode(Int.self, forKey: .pop)
+        self.pop = try? container.decodeIfPresent(Int.self, forKey: .pop) ?? 0
         self.sys = try container.decode(SysDTO.self, forKey: .sys)
         self.dt_txt = try container.decode(String.self, forKey: .dt_txt)
     }

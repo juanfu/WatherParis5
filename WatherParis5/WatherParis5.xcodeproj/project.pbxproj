@@ -11,8 +11,6 @@
 		7506AC932903D59600A7A7AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7506AC922903D59600A7A7AE /* ContentView.swift */; };
 		7506AC952903D59700A7A7AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7506AC942903D59700A7A7AE /* Assets.xcassets */; };
 		7506AC982903D59700A7A7AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7506AC972903D59700A7A7AE /* Preview Assets.xcassets */; };
-		7506AC9A2903D59700A7A7AE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7506AC992903D59700A7A7AE /* Persistence.swift */; };
-		7506AC9D2903D59700A7A7AE /* WatherParis5.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7506AC9B2903D59700A7A7AE /* WatherParis5.xcdatamodeld */; };
 		7506ACA72903D59800A7A7AE /* WatherParis5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7506ACA62903D59800A7A7AE /* WatherParis5Tests.swift */; };
 		7506ACB12903D59800A7A7AE /* WatherParis5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7506ACB02903D59800A7A7AE /* WatherParis5UITests.swift */; };
 		7506ACB32903D59800A7A7AE /* WatherParis5UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7506ACB22903D59800A7A7AE /* WatherParis5UITestsLaunchTests.swift */; };
@@ -43,6 +41,11 @@
 		75C3235D2905445900843E59 /* WeatherInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3235C2905445900843E59 /* WeatherInfoRepository.swift */; };
 		75C3235F2905831500843E59 /* FetchWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3235E2905831500843E59 /* FetchWeatherAPI.swift */; };
 		75C323622905852000843E59 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C323612905852000843E59 /* APIConstants.swift */; };
+		75E27B7E29083BCF00BC7BEE /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 75E27B7D29083BCF00BC7BEE /* Realm */; };
+		75E27B8029083BCF00BC7BEE /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 75E27B7F29083BCF00BC7BEE /* RealmSwift */; };
+		75E27B8329083E1600BC7BEE /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E27B8229083E1600BC7BEE /* Database.swift */; };
+		75E27B8629083EC400BC7BEE /* DBModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E27B8529083EC400BC7BEE /* DBModels.swift */; };
+		75E27B88290869CF00BC7BEE /* DBMappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E27B87290869CF00BC7BEE /* DBMappers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +71,6 @@
 		7506AC922903D59600A7A7AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7506AC942903D59700A7A7AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7506AC972903D59700A7A7AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7506AC992903D59700A7A7AE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		7506AC9C2903D59700A7A7AE /* WatherParis5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WatherParis5.xcdatamodel; sourceTree = "<group>"; };
 		7506ACA22903D59800A7A7AE /* WatherParis5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatherParis5Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7506ACA62903D59800A7A7AE /* WatherParis5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatherParis5Tests.swift; sourceTree = "<group>"; };
 		7506ACAC2903D59800A7A7AE /* WatherParis5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatherParis5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +101,9 @@
 		75C3235C2905445900843E59 /* WeatherInfoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoRepository.swift; sourceTree = "<group>"; };
 		75C3235E2905831500843E59 /* FetchWeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchWeatherAPI.swift; sourceTree = "<group>"; };
 		75C323612905852000843E59 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		75E27B8229083E1600BC7BEE /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		75E27B8529083EC400BC7BEE /* DBModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBModels.swift; sourceTree = "<group>"; };
+		75E27B87290869CF00BC7BEE /* DBMappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBMappers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75E27B8029083BCF00BC7BEE /* RealmSwift in Frameworks */,
+				75E27B7E29083BCF00BC7BEE /* Realm in Frameworks */,
 				757BCDB6290415D4000B4BD7 /* Kingfisher in Frameworks */,
 				757BCDB229040E28000B4BD7 /* Alamofire in Frameworks */,
 			);
@@ -152,15 +158,12 @@
 		7506AC8F2903D59600A7A7AE /* WatherParis5 */ = {
 			isa = PBXGroup;
 			children = (
+				757BCD9A2903DEA7000B4BD7 /* businessobjects */,
 				757BCDB329040EFD000B4BD7 /* repository */,
 				757BCD9B2903DEB1000B4BD7 /* ui */,
-				757BCD9A2903DEA7000B4BD7 /* BussinesObjects */,
-				757BCD992903DE9C000B4BD7 /* Api */,
 				7506AC902903D59600A7A7AE /* WatherParis5App.swift */,
 				7506AC922903D59600A7A7AE /* ContentView.swift */,
 				7506AC942903D59700A7A7AE /* Assets.xcassets */,
-				7506AC992903D59700A7A7AE /* Persistence.swift */,
-				7506AC9B2903D59700A7A7AE /* WatherParis5.xcdatamodeld */,
 				7506AC962903D59700A7A7AE /* Preview Content */,
 			);
 			path = WatherParis5;
@@ -210,7 +213,7 @@
 			path = Api;
 			sourceTree = "<group>";
 		};
-		757BCD9A2903DEA7000B4BD7 /* BussinesObjects */ = {
+		757BCD9A2903DEA7000B4BD7 /* businessobjects */ = {
 			isa = PBXGroup;
 			children = (
 				75C3234A290531F200843E59 /* CityBO.swift */,
@@ -223,7 +226,7 @@
 				75C323582905325700843E59 /* SysBO.swift */,
 				75C3235A2905326100843E59 /* ResponseBO.swift */,
 			);
-			path = BussinesObjects;
+			path = businessobjects;
 			sourceTree = "<group>";
 		};
 		757BCD9B2903DEB1000B4BD7 /* ui */ = {
@@ -261,6 +264,8 @@
 		757BCDB329040EFD000B4BD7 /* repository */ = {
 			isa = PBXGroup;
 			children = (
+				75E27B8129083D4F00BC7BEE /* database */,
+				757BCD992903DE9C000B4BD7 /* Api */,
 				75C3235C2905445900843E59 /* WeatherInfoRepository.swift */,
 			);
 			path = repository;
@@ -284,6 +289,24 @@
 			path = APIConstants;
 			sourceTree = "<group>";
 		};
+		75E27B8129083D4F00BC7BEE /* database */ = {
+			isa = PBXGroup;
+			children = (
+				75E27B8429083EB200BC7BEE /* DBModels */,
+				75E27B8229083E1600BC7BEE /* Database.swift */,
+				75E27B87290869CF00BC7BEE /* DBMappers.swift */,
+			);
+			path = database;
+			sourceTree = "<group>";
+		};
+		75E27B8429083EB200BC7BEE /* DBModels */ = {
+			isa = PBXGroup;
+			children = (
+				75E27B8529083EC400BC7BEE /* DBModels.swift */,
+			);
+			path = DBModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -303,6 +326,8 @@
 			packageProductDependencies = (
 				757BCDB129040E28000B4BD7 /* Alamofire */,
 				757BCDB5290415D4000B4BD7 /* Kingfisher */,
+				75E27B7D29083BCF00BC7BEE /* Realm */,
+				75E27B7F29083BCF00BC7BEE /* RealmSwift */,
 			);
 			productName = WatherParis5;
 			productReference = 7506AC8D2903D59600A7A7AE /* WatherParis5.app */;
@@ -379,6 +404,7 @@
 			packageReferences = (
 				757BCDB029040E28000B4BD7 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				757BCDB4290415D3000B4BD7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				75E27B7C29083BCF00BC7BEE /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 7506AC8E2903D59600A7A7AE /* Products */;
 			projectDirPath = "";
@@ -424,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				757BCD9F2903E043000B4BD7 /* CityDTO.swift in Sources */,
+				75E27B88290869CF00BC7BEE /* DBMappers.swift in Sources */,
 				75C3235B2905326100843E59 /* ResponseBO.swift in Sources */,
 				757BCDB829043748000B4BD7 /* HomeView.swift in Sources */,
 				757BCDAF29040B6F000B4BD7 /* ResponseDTO.swift in Sources */,
@@ -435,8 +462,6 @@
 				75C3235F2905831500843E59 /* FetchWeatherAPI.swift in Sources */,
 				75C3234F2905320900843E59 /* WeatherBO.swift in Sources */,
 				75C323512905322500843E59 /* WeatherListItemBO.swift in Sources */,
-				7506AC9D2903D59700A7A7AE /* WatherParis5.xcdatamodeld in Sources */,
-				7506AC9A2903D59700A7A7AE /* Persistence.swift in Sources */,
 				757BCDA52903EFFA000B4BD7 /* WeatherListItemDTO.swift in Sources */,
 				75C3234D290531FD00843E59 /* CoordinateBO.swift in Sources */,
 				75C323572905324A00843E59 /* WindBO.swift in Sources */,
@@ -444,11 +469,13 @@
 				757BCDBB2904375D000B4BD7 /* HomeModel.swift in Sources */,
 				75C323552905323C00843E59 /* CloudsBO.swift in Sources */,
 				757BCDA92903F456000B4BD7 /* CloudsDTO.swift in Sources */,
+				75E27B8629083EC400BC7BEE /* DBModels.swift in Sources */,
 				757BCDA32903EAEA000B4BD7 /* WeatherDTO.swift in Sources */,
 				75C3235D2905445900843E59 /* WeatherInfoRepository.swift in Sources */,
 				7506AC932903D59600A7A7AE /* ContentView.swift in Sources */,
 				75C3234B290531F200843E59 /* CityBO.swift in Sources */,
 				757BCDAD2904034B000B4BD7 /* SysDTO.swift in Sources */,
+				75E27B8329083E1600BC7BEE /* Database.swift in Sources */,
 				757BCDA72903F0B2000B4BD7 /* MainDTO.swift in Sources */,
 				7506AC912903D59600A7A7AE /* WatherParis5App.swift in Sources */,
 			);
@@ -795,6 +822,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		75E27B7C29083BCF00BC7BEE /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -808,20 +843,17 @@
 			package = 757BCDB4290415D3000B4BD7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
-/* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		7506AC9B2903D59700A7A7AE /* WatherParis5.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				7506AC9C2903D59700A7A7AE /* WatherParis5.xcdatamodel */,
-			);
-			currentVersion = 7506AC9C2903D59700A7A7AE /* WatherParis5.xcdatamodel */;
-			path = WatherParis5.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
+		75E27B7D29083BCF00BC7BEE /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75E27B7C29083BCF00BC7BEE /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
 		};
-/* End XCVersionGroup section */
+		75E27B7F29083BCF00BC7BEE /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75E27B7C29083BCF00BC7BEE /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7506AC852903D59600A7A7AE /* Project object */;
 }

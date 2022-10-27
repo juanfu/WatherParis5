@@ -8,10 +8,24 @@
 import SwiftUI
 
 struct HomeView: View {
-    @ObservedObject var homeViewModel: HomeViewModel = HomeViewModel()
+    @StateObject var homeViewModel: HomeViewModel = HomeViewModel()
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            LazyVStack {
+                if let model = homeViewModel.model,
+                   let list = model.model.list {
+                    ForEach(list, id: \.self) { item in
+                        Text("\(item.dt_txt)")
+                    }
+                } else {
+                    Text("no data fetched")
+                }
+            }
+        }
+        .onAppear {
+            homeViewModel.fetchWeatherData()
+        }
     }
 }
 

@@ -11,3 +11,9 @@ struct CoordinateBO {
     let lat: Float
     let lon: Float
 }
+
+extension CoordinateObject {
+    func toBO() -> CoordinateBO {
+        return CoordinateBO(lat: self.lat, lon: self.lon)
+    }
+}
