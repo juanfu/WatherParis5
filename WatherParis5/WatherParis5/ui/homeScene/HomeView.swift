@@ -9,22 +9,33 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject var homeViewModel: HomeViewModel = HomeViewModel()
-
+    
     var body: some View {
-        ScrollView {
-            LazyVStack {
-                if let model = homeViewModel.model,
-                   let list = model.model.list {
-                    ForEach(list, id: \.self) { item in
-                        Text("\(item.dt_txt)")
+        NavigationStack {
+            ScrollView(showsIndicators: false) {
+                LazyVStack {
+                    if let model = homeViewModel.model,
+                       let list = model.model.list {
+                        ForEach(list, id: \.self) { item in
+                            NavigationLink(value: item) {
+                                DayCellView(model: item)
+                            }
+                        }
+                    } else {
+                        Text("No data fetched")
                     }
-                } else {
-                    Text("no data fetched")
+                }
+                .navigationDestination(for: WeatherListItemBO.self) { item in
+                    DetailView(model: item)
                 }
             }
+            .onAppear {
+                homeViewModel.fetchWeatherData()
+            }
         }
-        .onAppear {
-            homeViewModel.fetchWeatherData()
+        .background {
+            LinearGradient(colors: [.white, .blue], startPoint: SwiftUI.UnitPoint.topLeading, endPoint: SwiftUI.UnitPoint.bottomLeading)
+                .edgesIgnoringSafeArea(.all)
         }
     }
 }

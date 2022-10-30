@@ -46,6 +46,8 @@
 		75E27B8329083E1600BC7BEE /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E27B8229083E1600BC7BEE /* Database.swift */; };
 		75E27B8629083EC400BC7BEE /* DBModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E27B8529083EC400BC7BEE /* DBModels.swift */; };
 		75E27B88290869CF00BC7BEE /* DBMappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E27B87290869CF00BC7BEE /* DBMappers.swift */; };
+		75E27B8B290AE69700BC7BEE /* DayCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E27B8A290AE69700BC7BEE /* DayCellView.swift */; };
+		75E27B8E290B098700BC7BEE /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E27B8D290B098700BC7BEE /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,8 @@
 		75E27B8229083E1600BC7BEE /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		75E27B8529083EC400BC7BEE /* DBModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBModels.swift; sourceTree = "<group>"; };
 		75E27B87290869CF00BC7BEE /* DBMappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBMappers.swift; sourceTree = "<group>"; };
+		75E27B8A290AE69700BC7BEE /* DayCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCellView.swift; sourceTree = "<group>"; };
+		75E27B8D290B098700BC7BEE /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +278,7 @@
 		757BCDB92904374C000B4BD7 /* homeScene */ = {
 			isa = PBXGroup;
 			children = (
+				75E27B89290AE68400BC7BEE /* subviews */,
 				757BCDB729043748000B4BD7 /* HomeView.swift */,
 				757BCDBA2904375D000B4BD7 /* HomeModel.swift */,
 				757BCDBC29043766000B4BD7 /* HomeViewModel.swift */,
@@ -305,6 +310,15 @@
 				75E27B8529083EC400BC7BEE /* DBModels.swift */,
 			);
 			path = DBModels;
+			sourceTree = "<group>";
+		};
+		75E27B89290AE68400BC7BEE /* subviews */ = {
+			isa = PBXGroup;
+			children = (
+				75E27B8D290B098700BC7BEE /* DetailView.swift */,
+				75E27B8A290AE69700BC7BEE /* DayCellView.swift */,
+			);
+			path = subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,6 +468,7 @@
 				75C3235B2905326100843E59 /* ResponseBO.swift in Sources */,
 				757BCDB829043748000B4BD7 /* HomeView.swift in Sources */,
 				757BCDAF29040B6F000B4BD7 /* ResponseDTO.swift in Sources */,
+				75E27B8B290AE69700BC7BEE /* DayCellView.swift in Sources */,
 				75C323532905322F00843E59 /* MainBO.swift in Sources */,
 				757BCDBD29043766000B4BD7 /* HomeViewModel.swift in Sources */,
 				757BCDAB2903F603000B4BD7 /* WindDTO.swift in Sources */,
@@ -464,6 +479,7 @@
 				75C323512905322500843E59 /* WeatherListItemBO.swift in Sources */,
 				757BCDA52903EFFA000B4BD7 /* WeatherListItemDTO.swift in Sources */,
 				75C3234D290531FD00843E59 /* CoordinateBO.swift in Sources */,
+				75E27B8E290B098700BC7BEE /* DetailView.swift in Sources */,
 				75C323572905324A00843E59 /* WindBO.swift in Sources */,
 				757BCDA12903E76F000B4BD7 /* CoordinateDTO.swift in Sources */,
 				757BCDBB2904375D000B4BD7 /* HomeModel.swift in Sources */,

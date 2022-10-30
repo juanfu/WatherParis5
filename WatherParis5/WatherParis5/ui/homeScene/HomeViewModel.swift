@@ -15,7 +15,6 @@ class HomeViewModel: ObservableObject {
         repository.fetchWeather { responseBO in
             DispatchQueue.main.async {
                 self.model = HomeModel(model: responseBO)
-                print(responseBO)
             }
         }
     }

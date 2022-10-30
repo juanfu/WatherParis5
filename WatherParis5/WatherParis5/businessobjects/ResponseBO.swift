@@ -16,7 +16,7 @@ struct ResponseBO {
 extension ResponseObject {
     func toBO() -> ResponseBO {
         return ResponseBO(
-            list: self.listBO(from: self.list ),
+            list: self.listBO(from: self.list),
             city: self.city?.toBO() ?? CityBO(id: 0, name: "0", coord: CoordinateBO(lat: 0.0, lon: 0.0), country: "0", population: 0, timezone: 0, sunrise: 0, sunset: 0)
         )
     }
