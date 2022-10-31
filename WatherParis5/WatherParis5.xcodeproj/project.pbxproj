@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CFF493BB7D8DCDC3E74E559 /* WatherParis5Tests-WatherParis5Mocks.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73266EFCC03A47B4AE420F7 /* WatherParis5Tests-WatherParis5Mocks.generated.swift */; };
 		7506AC912903D59600A7A7AE /* WatherParis5App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7506AC902903D59600A7A7AE /* WatherParis5App.swift */; };
 		7506AC932903D59600A7A7AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7506AC922903D59600A7A7AE /* ContentView.swift */; };
 		7506AC952903D59700A7A7AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7506AC942903D59700A7A7AE /* Assets.xcassets */; };
@@ -14,7 +15,6 @@
 		7506ACA72903D59800A7A7AE /* WatherParis5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7506ACA62903D59800A7A7AE /* WatherParis5Tests.swift */; };
 		7506ACB12903D59800A7A7AE /* WatherParis5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7506ACB02903D59800A7A7AE /* WatherParis5UITests.swift */; };
 		7506ACB32903D59800A7A7AE /* WatherParis5UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7506ACB22903D59800A7A7AE /* WatherParis5UITestsLaunchTests.swift */; };
-		7506ACC12903DB6D00A7A7AE /* response200Mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 7506ACC02903DB6D00A7A7AE /* response200Mock.json */; };
 		757BCD9F2903E043000B4BD7 /* CityDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BCD9E2903E043000B4BD7 /* CityDTO.swift */; };
 		757BCDA12903E76F000B4BD7 /* CoordinateDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BCDA02903E76F000B4BD7 /* CoordinateDTO.swift */; };
 		757BCDA32903EAEA000B4BD7 /* WeatherDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BCDA22903EAEA000B4BD7 /* WeatherDTO.swift */; };
@@ -41,6 +41,9 @@
 		75C3235D2905445900843E59 /* WeatherInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3235C2905445900843E59 /* WeatherInfoRepository.swift */; };
 		75C3235F2905831500843E59 /* FetchWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3235E2905831500843E59 /* FetchWeatherAPI.swift */; };
 		75C323622905852000843E59 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C323612905852000843E59 /* APIConstants.swift */; };
+		75CA54C8290F1B6100BE00AA /* Mockingbird in Frameworks */ = {isa = PBXBuildFile; productRef = 75CA54C7290F1B6100BE00AA /* Mockingbird */; };
+		75CA54CA290F1B9D00BE00AA /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 75CA54C9290F1B9D00BE00AA /* Realm */; };
+		75CA54CC290F1BA200BE00AA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 75CA54CB290F1BA200BE00AA /* Alamofire */; };
 		75E27B7E29083BCF00BC7BEE /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 75E27B7D29083BCF00BC7BEE /* Realm */; };
 		75E27B8029083BCF00BC7BEE /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 75E27B7F29083BCF00BC7BEE /* RealmSwift */; };
 		75E27B8329083E1600BC7BEE /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E27B8229083E1600BC7BEE /* Database.swift */; };
@@ -78,7 +81,6 @@
 		7506ACAC2903D59800A7A7AE /* WatherParis5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatherParis5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7506ACB02903D59800A7A7AE /* WatherParis5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatherParis5UITests.swift; sourceTree = "<group>"; };
 		7506ACB22903D59800A7A7AE /* WatherParis5UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatherParis5UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		7506ACC02903DB6D00A7A7AE /* response200Mock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = response200Mock.json; sourceTree = "<group>"; };
 		757BCD9E2903E043000B4BD7 /* CityDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDTO.swift; sourceTree = "<group>"; };
 		757BCDA02903E76F000B4BD7 /* CoordinateDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateDTO.swift; sourceTree = "<group>"; };
 		757BCDA22903EAEA000B4BD7 /* WeatherDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDTO.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		75E27B87290869CF00BC7BEE /* DBMappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBMappers.swift; sourceTree = "<group>"; };
 		75E27B8A290AE69700BC7BEE /* DayCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCellView.swift; sourceTree = "<group>"; };
 		75E27B8D290B098700BC7BEE /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		F73266EFCC03A47B4AE420F7 /* WatherParis5Tests-WatherParis5Mocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = "WatherParis5Tests-WatherParis5Mocks.generated.swift"; path = "MockingbirdMocks/WatherParis5Tests-WatherParis5Mocks.generated.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75CA54CC290F1BA200BE00AA /* Alamofire in Frameworks */,
+				75CA54CA290F1B9D00BE00AA /* Realm in Frameworks */,
+				75CA54C8290F1B6100BE00AA /* Mockingbird in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +152,8 @@
 				7506ACA52903D59800A7A7AE /* WatherParis5Tests */,
 				7506ACAF2903D59800A7A7AE /* WatherParis5UITests */,
 				7506AC8E2903D59600A7A7AE /* Products */,
+				75CA54C6290F1B6100BE00AA /* Frameworks */,
+				AEFDE388416DC896AFEAA452 /* Generated Mocks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,7 +192,6 @@
 		7506ACA52903D59800A7A7AE /* WatherParis5Tests */ = {
 			isa = PBXGroup;
 			children = (
-				7506ACBF2903DB3200A7A7AE /* Mock */,
 				7506ACA62903D59800A7A7AE /* WatherParis5Tests.swift */,
 			);
 			path = WatherParis5Tests;
@@ -197,14 +204,6 @@
 				7506ACB22903D59800A7A7AE /* WatherParis5UITestsLaunchTests.swift */,
 			);
 			path = WatherParis5UITests;
-			sourceTree = "<group>";
-		};
-		7506ACBF2903DB3200A7A7AE /* Mock */ = {
-			isa = PBXGroup;
-			children = (
-				7506ACC02903DB6D00A7A7AE /* response200Mock.json */,
-			);
-			path = Mock;
 			sourceTree = "<group>";
 		};
 		757BCD992903DE9C000B4BD7 /* Api */ = {
@@ -294,6 +293,13 @@
 			path = APIConstants;
 			sourceTree = "<group>";
 		};
+		75CA54C6290F1B6100BE00AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		75E27B8129083D4F00BC7BEE /* database */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +325,14 @@
 				75E27B8A290AE69700BC7BEE /* DayCellView.swift */,
 			);
 			path = subviews;
+			sourceTree = "<group>";
+		};
+		AEFDE388416DC896AFEAA452 /* Generated Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F73266EFCC03A47B4AE420F7 /* WatherParis5Tests-WatherParis5Mocks.generated.swift */,
+			);
+			name = "Generated Mocks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +365,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7506ACB92903D59800A7A7AE /* Build configuration list for PBXNativeTarget "WatherParis5Tests" */;
 			buildPhases = (
+				7868506F447591AFAD1FC15C /* Generate Mockingbird Mocks */,
 				7506AC9E2903D59800A7A7AE /* Sources */,
 				7506AC9F2903D59800A7A7AE /* Frameworks */,
 				7506ACA02903D59800A7A7AE /* Resources */,
@@ -358,9 +373,15 @@
 			buildRules = (
 			);
 			dependencies = (
+				75CA54CE290F25BF00BE00AA /* PBXTargetDependency */,
 				7506ACA42903D59800A7A7AE /* PBXTargetDependency */,
 			);
 			name = WatherParis5Tests;
+			packageProductDependencies = (
+				75CA54C7290F1B6100BE00AA /* Mockingbird */,
+				75CA54C9290F1B9D00BE00AA /* Realm */,
+				75CA54CB290F1BA200BE00AA /* Alamofire */,
+			);
 			productName = WatherParis5Tests;
 			productReference = 7506ACA22903D59800A7A7AE /* WatherParis5Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -419,6 +440,7 @@
 				757BCDB029040E28000B4BD7 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				757BCDB4290415D3000B4BD7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				75E27B7C29083BCF00BC7BEE /* XCRemoteSwiftPackageReference "realm-swift" */,
+				75CA54C3290F1B5600BE00AA /* XCRemoteSwiftPackageReference "mockingbird" */,
 			);
 			productRefGroup = 7506AC8E2903D59600A7A7AE /* Products */;
 			projectDirPath = "";
@@ -445,7 +467,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7506ACC12903DB6D00A7A7AE /* response200Mock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +478,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7868506F447591AFAD1FC15C /* Generate Mockingbird Mocks */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Mockingbird Mocks";
+			outputPaths = (
+				"$(SRCROOT)/MockingbirdMocks/WatherParis5Tests-WatherParis5Mocks.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eu\n\n# Prevent Xcode 13 from running this script while indexing.\n[[ \"${ACTION}\" == \"indexbuild\" ]] && exit 0\n\n# Infer the derived data location from the build environment.\n[[ -z \"${DERIVED_DATA+x}\" ]] && DERIVED_DATA=\"$(echo \"${BUILD_ROOT}\" | sed -n 's|\\(.*\\)/Build/.*|\\1|p')\"\n\n\"${DERIVED_DATA}/SourcePackages/checkouts/mockingbird/mockingbird\" generate --targets \"WatherParis5\" --outputs \"${SRCROOT}/MockingbirdMocks/WatherParis5Tests-WatherParis5Mocks.generated.swift\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7506AC892903D59600A7A7AE /* Sources */ = {
@@ -502,6 +542,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7506ACA72903D59800A7A7AE /* WatherParis5Tests.swift in Sources */,
+				2CFF493BB7D8DCDC3E74E559 /* WatherParis5Tests-WatherParis5Mocks.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +567,10 @@
 			isa = PBXTargetDependency;
 			target = 7506AC8C2903D59600A7A7AE /* WatherParis5 */;
 			targetProxy = 7506ACAD2903D59800A7A7AE /* PBXContainerItemProxy */;
+		};
+		75CA54CE290F25BF00BE00AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 75CA54CD290F25BF00BE00AA /* Mockingbird */;
 		};
 /* End PBXTargetDependency section */
 
@@ -838,6 +883,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		75CA54C3290F1B5600BE00AA /* XCRemoteSwiftPackageReference "mockingbird" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/birdrides/mockingbird";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
 		75E27B7C29083BCF00BC7BEE /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift";
@@ -858,6 +911,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 757BCDB4290415D3000B4BD7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		75CA54C7290F1B6100BE00AA /* Mockingbird */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75CA54C3290F1B5600BE00AA /* XCRemoteSwiftPackageReference "mockingbird" */;
+			productName = Mockingbird;
+		};
+		75CA54C9290F1B9D00BE00AA /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75E27B7C29083BCF00BC7BEE /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		75CA54CB290F1BA200BE00AA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 757BCDB029040E28000B4BD7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		75CA54CD290F25BF00BE00AA /* Mockingbird */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75CA54C3290F1B5600BE00AA /* XCRemoteSwiftPackageReference "mockingbird" */;
+			productName = Mockingbird;
 		};
 		75E27B7D29083BCF00BC7BEE /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;

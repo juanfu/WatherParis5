@@ -13,6 +13,8 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             ScrollView(showsIndicators: false) {
+                Text("Paris Weather 5days")
+                    .font(.largeTitle)
                 LazyVStack {
                     if let model = homeViewModel.model,
                        let list = model.model.list {

@@ -12,16 +12,24 @@ protocol WeatherInfoRepositoryProtocol {
 }
 
 class WeatherInfoRepository: WeatherInfoRepositoryProtocol {
+    var database: DatabaseManager
+    var api: FetchWeatherAPI
+    
+    init(database: DatabaseManager = DatabaseManager.shared, api: FetchWeatherAPI = FetchWeatherAPI()) {
+        self.database = database
+        self.api = api
+    }
+    
     func fetchWeather(completion: @escaping (ResponseBO) -> Void) {
         // return cached data
-        let model = DatabaseManager.shared.getData()
+        let model = database.getData()
         
         if let model = model {
             completion(model.toBO())
         }
         
         // fetch remote data
-        FetchWeatherAPI().fetchWeather { error in
+        api.fetchWeather { error in
             if let error = error {
                 print(error)
             } else {

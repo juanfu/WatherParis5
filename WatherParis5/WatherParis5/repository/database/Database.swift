@@ -9,17 +9,17 @@ import Foundation
 import RealmSwift
 
 
-final class DatabaseManager {
+class DatabaseManager {
     static let shared = DatabaseManager()
     var databaseClient = DataBase()
     
     func persistInDatabase(model: ResponseObject, callback: @escaping (Error?) -> Void) {
         do {
-            try databaseClient.realm?.write({
+            try databaseClient.realm?.write {
                 if let allObjects = databaseClient.realm?.objects(ResponseObject.self) {
                     databaseClient.realm?.delete(allObjects)
                 }
-            })
+            }
             try databaseClient.realm?.write {
                 databaseClient.realm?.add(model)
             }

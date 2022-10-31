@@ -12,8 +12,8 @@ struct APIConstants {
     static let base_url = "https://api.openweathermap.org/data/2.5/forecast"
     
     static let params: [String : String] = [
-        "lat" : "38.2303",
-        "lon" : "-0.8151",
+        "lat" : "48.864716",
+        "lon" : "2.349014",
         "appid" : APIConstants.api_key,
         "units" : "metric"
     ]
