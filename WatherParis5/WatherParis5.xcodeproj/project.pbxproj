@@ -44,6 +44,7 @@
 		75CA54C8290F1B6100BE00AA /* Mockingbird in Frameworks */ = {isa = PBXBuildFile; productRef = 75CA54C7290F1B6100BE00AA /* Mockingbird */; };
 		75CA54CA290F1B9D00BE00AA /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 75CA54C9290F1B9D00BE00AA /* Realm */; };
 		75CA54CC290F1BA200BE00AA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 75CA54CB290F1BA200BE00AA /* Alamofire */; };
+		75E092C72915600C00CDA949 /* ApiErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E092C62915600C00CDA949 /* ApiErrors.swift */; };
 		75E27B7E29083BCF00BC7BEE /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 75E27B7D29083BCF00BC7BEE /* Realm */; };
 		75E27B8029083BCF00BC7BEE /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 75E27B7F29083BCF00BC7BEE /* RealmSwift */; };
 		75E27B8329083E1600BC7BEE /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E27B8229083E1600BC7BEE /* Database.swift */; };
@@ -105,12 +106,13 @@
 		75C3235C2905445900843E59 /* WeatherInfoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoRepository.swift; sourceTree = "<group>"; };
 		75C3235E2905831500843E59 /* FetchWeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchWeatherAPI.swift; sourceTree = "<group>"; };
 		75C323612905852000843E59 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		75E092C62915600C00CDA949 /* ApiErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrors.swift; sourceTree = "<group>"; };
 		75E27B8229083E1600BC7BEE /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		75E27B8529083EC400BC7BEE /* DBModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBModels.swift; sourceTree = "<group>"; };
 		75E27B87290869CF00BC7BEE /* DBMappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBMappers.swift; sourceTree = "<group>"; };
 		75E27B8A290AE69700BC7BEE /* DayCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCellView.swift; sourceTree = "<group>"; };
 		75E27B8D290B098700BC7BEE /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		F73266EFCC03A47B4AE420F7 /* WatherParis5Tests-WatherParis5Mocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = "WatherParis5Tests-WatherParis5Mocks.generated.swift"; path = "MockingbirdMocks/WatherParis5Tests-WatherParis5Mocks.generated.swift"; sourceTree = "<group>"; };
+		F73266EFCC03A47B4AE420F7 /* WatherParis5Tests-WatherParis5Mocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "WatherParis5Tests-WatherParis5Mocks.generated.swift"; path = "MockingbirdMocks/WatherParis5Tests-WatherParis5Mocks.generated.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				75C323612905852000843E59 /* APIConstants.swift */,
+				75E092C62915600C00CDA949 /* ApiErrors.swift */,
 			);
 			path = APIConstants;
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				757BCD9F2903E043000B4BD7 /* CityDTO.swift in Sources */,
+				75E092C72915600C00CDA949 /* ApiErrors.swift in Sources */,
 				75E27B88290869CF00BC7BEE /* DBMappers.swift in Sources */,
 				75C3235B2905326100843E59 /* ResponseBO.swift in Sources */,
 				757BCDB829043748000B4BD7 /* HomeView.swift in Sources */,

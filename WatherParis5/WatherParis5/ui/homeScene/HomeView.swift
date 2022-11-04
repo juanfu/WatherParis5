@@ -35,10 +35,6 @@ struct HomeView: View {
                 homeViewModel.fetchWeatherData()
             }
         }
-        .background {
-            LinearGradient(colors: [.white, .blue], startPoint: SwiftUI.UnitPoint.topLeading, endPoint: SwiftUI.UnitPoint.bottomLeading)
-                .edgesIgnoringSafeArea(.all)
-        }
     }
 }
 

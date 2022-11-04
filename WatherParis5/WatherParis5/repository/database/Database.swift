@@ -11,9 +11,11 @@ import RealmSwift
 
 class DatabaseManager {
     static let shared = DatabaseManager()
-    var databaseClient = DataBase()
+    private var databaseClient = DataBase()
     
-    func persistInDatabase(model: ResponseObject, callback: @escaping (Error?) -> Void) {
+    private init() {}
+    
+    func persistInDatabase(model: ResponseObject, callback: @escaping (Errors?) -> Void) {
         do {
             try databaseClient.realm?.write {
                 if let allObjects = databaseClient.realm?.objects(ResponseObject.self) {
@@ -25,7 +27,7 @@ class DatabaseManager {
             }
             callback(nil)
         } catch {
-            callback(error)
+            callback(Errors.databasePersist)
         }
     }
     
@@ -33,30 +35,32 @@ class DatabaseManager {
         let results = databaseClient.realm?.objects(ResponseObject.self)
         return results?.first?.freeze()
     }
+    
+    private struct DataBase {
+        var realm: Realm? {
+            do {
+                let realm = try Realm()
+                return realm
+            } catch {
+                print(error)
+                return nil
+            }
+        }
+        
+        init()  {
+            setupRealm(databaseName: "dbWeahterParis5")
+        }
+        
+        private func setupRealm(databaseName: String) {
+            var config = Realm.Configuration(schemaVersion: 2, migrationBlock: migrateIfNeeded)
+            if let fileURL = config.fileURL {
+                config.fileURL = fileURL.deletingLastPathComponent().appendingPathComponent("\(databaseName).realm")
+                Realm.Configuration.defaultConfiguration = config
+            }
+        }
+
+        private func migrateIfNeeded(migration: Migration, oldSchemaVersion: UInt64) {}
+    }
 }
 
-struct DataBase {
-    var realm: Realm? {
-        do {
-            let realm = try Realm()
-            return realm
-        } catch {
-            print(error)
-            return nil
-        }
-    }
-    
-    init()  {
-        setupRealm(databaseName: "dbWeahterParis5")
-    }
-    
-    private func setupRealm(databaseName: String) {
-        var config = Realm.Configuration(schemaVersion: 2, migrationBlock: migrateIfNeeded)
-        if let fileURL = config.fileURL {
-            config.fileURL = fileURL.deletingLastPathComponent().appendingPathComponent("\(databaseName).realm")
-            Realm.Configuration.defaultConfiguration = config
-        }
-    }
 
-    private func migrateIfNeeded(migration: Migration, oldSchemaVersion: UInt64) {}
-}

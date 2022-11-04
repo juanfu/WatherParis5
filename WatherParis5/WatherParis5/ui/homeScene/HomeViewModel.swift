@@ -9,7 +9,12 @@ import Foundation
 
 class HomeViewModel: ObservableObject {
     @Published var model: HomeModel?
-    let repository: WeatherInfoRepository = WeatherInfoRepository()
+    let repository: WeatherInfoRepositoryProtocol
+    
+    public init(model: HomeModel? = nil, repository: WeatherInfoRepositoryProtocol = WeatherInfoRepository()) {
+        self.model = model
+        self.repository = repository
+    }
     
     public func fetchWeatherData() {
         repository.fetchWeather { responseBO in
