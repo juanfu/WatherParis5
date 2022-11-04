@@ -19,7 +19,7 @@ struct DayCellView: View {
                     Text(model.dt_txt_hour)
                 }
                 Spacer()
-                if  let weather = model.weather.first,
+                if let weather = model.weather.first,
                     let icon = URL(string: "https://openweathermap.org/img/wn/\(weather.icon)@2x.png") {
                     KFImage(icon)
                         .resizable()
